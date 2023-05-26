@@ -1,0 +1,44 @@
+.show{
+  display: block;
+}
+
+.hide{
+  visibility: hidden;
+}
+.container{
+  user-select: none;
+  justify-content: center;
+  display: grid;
+  width: 380px;
+  grid-template-areas: 
+  'l img r';
+  grid-template-columns: 40px 200px 40px;
+}
+.btnR{
+  background-color: red;
+  grid-area: r;
+}
+
+.btnL{
+  background-color: blue;
+  grid-area: l;
+}
+
+.btnL, .btnR {
+  width: 40px;
+  height: 40px;
+}
+
+.img{
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  grid-area: img;
+}
+
+
+
+.container-current-img{
+  width: 200px;
+  height: 150px;
+}
